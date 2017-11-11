@@ -19,6 +19,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: subigya/codium_learn:latest
-    environment: export FLASK_APP=main.py
+    environment:
+     - FLASK_APP=main.py
     command: flask run
 
