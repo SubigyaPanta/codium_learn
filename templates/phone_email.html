@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone and Email</title>
+    <style>
+        div{
+            display: block;
+        }
+        .newline{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<form action="{{url_for('filter')}}" method="post">
+<h3>Enter the text here:</h3>
+    <textarea name="rawtext" rows="10" cols="50">{{rawtext}}</textarea>
+    <button type="submit" class="newline">Get Phone and Email</button>
+</form>
+<div id="output">
+    <p>{{email}}</p>
+    <p>{{phone}}</p>
+</div>
+</body>
+</html>
